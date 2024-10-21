@@ -4,9 +4,16 @@ using UnityEngine;
 
 public class Test : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
+    ObjectPoolRequest1 objectPoolRequest1;
+
     void Start()
     {
-        QuestManager a = QuestManager.Instance;
+        objectPoolRequest1 = GetComponent<ObjectPoolRequest1>();
+    }
+
+    public void GetObject()
+    {
+
     }
 }
