@@ -3,11 +3,25 @@ using UnityEngine;
 public class QuestManager : MonoBehaviour
 {
     private static QuestManager instance;
-
-    void Awake()
+    public static QuestManager Instance
     {
-        if(instance == null)
-            instance = this;
+        get 
+        {
+            if (instance == null)
+                instance = FindAnyObjectByType<QuestManager>();
+
+            if (instance == null)
+            {
+                GameObject go = new GameObject("Quest Manager");
+                instance = go.AddComponent<QuestManager>();
+            }
+
+            return instance; 
+        }
+        set
+        {
+            instance = value;
+        }
     }
 
 }
