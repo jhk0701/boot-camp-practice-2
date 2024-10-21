@@ -18,10 +18,16 @@ public class QuestManager : MonoBehaviour
 
             return instance; 
         }
-        set
-        {
-            instance = value;
-        }
+        // private set
+        // {
+        //     instance = value;
+        // }
+    }
+
+    void Awake()
+    {
+        if(instance == null)
+            instance = this;        
     }
 
 }
