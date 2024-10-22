@@ -8,26 +8,35 @@ public class QuestManager : MonoBehaviour
         get 
         {
             if (instance == null)
+            {
                 instance = FindAnyObjectByType<QuestManager>();
 
-            if (instance == null)
-            {
-                GameObject go = new GameObject("Quest Manager");
-                instance = go.AddComponent<QuestManager>();
+                if (instance == null)
+                {
+                    GameObject go = new GameObject("Quest Manager");
+                    instance = go.AddComponent<QuestManager>();
+                }
             }
 
             return instance; 
         }
-        // private set
-        // {
-        //     instance = value;
-        // }
     }
+
+    public QuestDataSO[] Quests;
+
 
     void Awake()
     {
-        if(instance == null)
+        if (instance == null)
             instance = this;        
+    }
+
+    void Start()
+    {
+        for (int i = 0; i < Quests.Length; i++)
+        {
+            Debug.Log($"Quest {i + 1} - {Quests[i].QuestName} (최소 레벨 {Quests[i].QuestRequiredLevel})");
+        }
     }
 
 }

@@ -12,6 +12,7 @@ public class ObjectPoolRequest2 : MonoBehaviour
 {
     public GameObject[] prefabs;
     
+    // 요구사항에 따라 문자열로 우선 사용
     private Dictionary<string, List<GameObject>> pools = new Dictionary<string, List<GameObject>>();
     private Dictionary<string, int> poolIndexes = new Dictionary<string, int>();
     public int poolSize = 300;

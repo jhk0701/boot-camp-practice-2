@@ -133,8 +133,9 @@ GameObject:
   m_Component:
   - component: {fileID: 157957646}
   - component: {fileID: 157957648}
-  - component: {fileID: 157957647}
   - component: {fileID: 157957649}
+  - component: {fileID: 157957650}
+  - component: {fileID: 157957647}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -181,7 +182,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 843f3ddda1fa53942bc39674371e5a2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Quests:
+  - {fileID: 11400000, guid: 08e788237982cf048b48b533304dd47a, type: 2}
+  - {fileID: 11400000, guid: eba0fd398050e2b4da9dc123d1eca911, type: 2}
 --- !u!114 &157957649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157957645}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4e4d4d63008ba4468b8717dccd89163, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 714156916157168567, guid: a1925096a7000f2459481d1424e8989a, type: 3}
+  poolSize: 300
+--- !u!114 &157957650
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -190,10 +208,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 157957645}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4e4d4d63008ba4468b8717dccd89163, type: 3}
+  m_Script: {fileID: 11500000, guid: 779a2af4c2d142c41a9b6884c08f54ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
+  prefabs:
+  - {fileID: 714156916157168567, guid: a1925096a7000f2459481d1424e8989a, type: 3}
+  - {fileID: 714156916157168567, guid: a1925096a7000f2459481d1424e8989a, type: 3}
   poolSize: 300
 --- !u!1 &519420028
 GameObject:
@@ -291,5 +311,5 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 519420032}
   - {fileID: 157957646}
+  - {fileID: 519420032}
