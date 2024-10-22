@@ -16,4 +16,4 @@ MonoBehaviour:
   QuestRequiredLevel: 10
   QuestNPC: 0
   QuestPrerequisites: 
-  QuestGoal: "\u3141\u3141\u3141\u3141"
+  QuestGoal: 

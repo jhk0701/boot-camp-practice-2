@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 157957648}
   - component: {fileID: 157957649}
   - component: {fileID: 157957650}
-  - component: {fileID: 157957647}
+  - component: {fileID: 157957651}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -158,18 +158,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &157957647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157957645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17e34947b3b68b04abcf5a14f127e555, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &157957648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,7 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Quests:
-  - {fileID: 11400000, guid: 08e788237982cf048b48b533304dd47a, type: 2}
+  - {fileID: 11400000, guid: 42fcc76d00d21444096c5400a0e27369, type: 2}
   - {fileID: 11400000, guid: eba0fd398050e2b4da9dc123d1eca911, type: 2}
 --- !u!114 &157957649
 MonoBehaviour:
@@ -215,6 +203,27 @@ MonoBehaviour:
   - {fileID: 714156916157168567, guid: a1925096a7000f2459481d1424e8989a, type: 3}
   - {fileID: 714156916157168567, guid: a1925096a7000f2459481d1424e8989a, type: 3}
   poolSize: 300
+--- !u!114 &157957651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157957645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 451610b5fc539d84c88dfe147e18d690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Npcs:
+  - "\uD55C\uD6A8\uC2B9 \uB9E4\uB2C8\uC800\uB2D8"
+  - "\uC548\uD61C\uB9B0 \uB9E4\uB2C8\uC800\uB2D8"
+  - "\uAE40\uB85D\uAE30 \uB9E4\uB2C8\uC800\uB2D8"
+  - "\uAC15\uCC44\uB9B0 \uB9E4\uB2C8\uC800\uB2D8"
+  Monsters:
+  - "\uAC1C\uC778 \uACFC\uC81C"
+  - "\uD300 \uD504\uB85C\uC81D\uD2B8 \uACFC\uC81C"
+  - "\uC548\uD61C\uB9B0 \uB9E4\uB2C8\uC800\uB2D8\uC758 \uAFB8\uC900\uACFC\uC81C"
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

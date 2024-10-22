@@ -4,5 +4,10 @@ using UnityEngine;
 public class MonsterQuestDataSO : QuestDataSO
 {
     public int QuestMonster; // 처치할 몬스터의 ID
-    public int KillCount;
+    public int QuestRequieredCount;
+
+    public override string GetQuestContent()
+    {
+        return $"{CharacterManager.Instance.Monsters[QuestMonster]}를 {QuestRequieredCount}마리 소탕";
+    }
 }

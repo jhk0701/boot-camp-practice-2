@@ -8,4 +8,9 @@ public class QuestDataSO : ScriptableObject
     public int QuestRequiredLevel;
     public int QuestNPC;
     public List<int> QuestPrerequisites;
+
+    public virtual string GetQuestContent()
+    {
+        return $"{ CharacterManager.Instance.Npcs[QuestNPC]}에게 말걸기.";
+    }
 }
