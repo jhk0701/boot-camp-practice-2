@@ -26,7 +26,6 @@ public class InputRebinder : MonoBehaviour
     }
     
     // [구현사항 2] ContextMenu 어트리뷰트를 활용해서 인스펙터창에서 적용할 수 있도록 함
-    
     [ContextMenu("Rebind")]
     public void RebindSpaceToEscape()
     {
@@ -49,6 +48,6 @@ public class InputRebinder : MonoBehaviour
 
     void TestSpace(InputAction.CallbackContext value)
     {
-        Debug.Log(value);
+        Debug.Log("Action called");
     }
 }

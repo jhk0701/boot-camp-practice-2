@@ -1,25 +1,28 @@
 using UnityEngine;
 
-public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
+namespace Standard
 {
-    private static T instance;
-    public static T Instance
+    public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     {
-        get 
+        private static T instance;
+        public static T Instance
         {
-            if (instance == null)
+            get 
             {
-                instance = FindAnyObjectByType<T>();
-
                 if (instance == null)
                 {
-                    GameObject go = new GameObject(typeof(T).Name);
-                    instance = go.AddComponent<T>();
-                }
-            }
+                    instance = FindAnyObjectByType<T>();
 
-            return instance; 
+                    if (instance == null)
+                    {
+                        GameObject go = new GameObject(typeof(T).Name);
+                        instance = go.AddComponent<T>();
+                    }
+                }
+
+                return instance; 
+            }
         }
+        
     }
-    
 }

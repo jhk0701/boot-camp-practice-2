@@ -1,4 +1,5 @@
 using UnityEngine;
+using Standard;
 
 public class QuestManager : Singleton<QuestManager>
 {
