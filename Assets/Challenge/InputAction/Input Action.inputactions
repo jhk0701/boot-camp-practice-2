@@ -1,0 +1,46 @@
+{
+    "name": "Input Action",
+    "maps": [
+        {
+            "name": "Challenge",
+            "id": "bc80a3cd-9765-4fa5-b240-3668a08612ff",
+            "actions": [
+                {
+                    "name": "Space",
+                    "type": "Value",
+                    "id": "f08b66e9-73fe-48cb-8693-c2d0f0fa192e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "331d0332-12cd-49d5-8fc3-4d619fcabc20",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Challenge",
+                    "action": "Space",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Challenge",
+            "bindingGroup": "Challenge",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
