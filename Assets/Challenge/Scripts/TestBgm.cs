@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Challenge
 {
-    public class Test : MonoBehaviour
+    public class TestBgm : MonoBehaviour
     {
         [ContextMenu("StartBgm")]
         public void StartBgm()
@@ -14,7 +14,6 @@ namespace Challenge
             AudioManager.Instance.PlayBgm();
         }
 
-        
         [ContextMenu("StopBgm")]
         public void StopBgm()
         {
