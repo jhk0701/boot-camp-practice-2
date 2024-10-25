@@ -40,7 +40,7 @@ namespace Challenge
             {
                 // 요청 받았는데 넘어가면 추가 생성 : 300개 까지
                 // 가장 오래전에 생성된 오브젝트 반환
-                if (pool.Count <= maxSize)
+                if (pool.Count < maxSize)
                 {
                     obj = CreateObject(); // 생성 후 사용
                     pool.Enqueue(obj); // 바로 뒷자리로 삽입
@@ -65,6 +65,11 @@ namespace Challenge
         {
             // [요구스펙 3] Release Object
             obj.SetActive(false);
+        }
+
+        public override void Debug()
+        {
+            UnityEngine.Debug.Log($"Use Object : {pool.Count}");
         }
     }   
 }
