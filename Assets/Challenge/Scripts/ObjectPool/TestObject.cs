@@ -15,4 +15,9 @@ public class TestObject : MonoBehaviour
     {
         TestManager.Instance.objectPoolTester.ReturnObject(gameObject);
     }
+
+    void OnDestroy()
+    {
+        Debug.Log($"{name} is destoyed");    
+    }
 }
