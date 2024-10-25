@@ -1,0 +1,46 @@
+{
+    "name": "Test",
+    "maps": [
+        {
+            "name": "Map",
+            "id": "c9254d69-3e3d-497d-aaf2-f4a345b77aa4",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "0a871c8c-e47d-4421-857f-7ef506028252",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "8a4cd149-ccd6-4769-b19a-9458fa0aca99",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Input System Test",
+            "bindingGroup": "Input System Test",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}

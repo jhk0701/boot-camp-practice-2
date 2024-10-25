@@ -14,6 +14,7 @@ public class ObjectPoolRequest2 : MonoBehaviour
     
     // 요구사항에 따라 문자열로 우선 사용
     private Dictionary<string, List<GameObject>> pools = new Dictionary<string, List<GameObject>>();
+    // 왜? 인덱스를 만들어서 썼는가?
     private Dictionary<string, int> poolIndexes = new Dictionary<string, int>();
     public int poolSize = 300;
 

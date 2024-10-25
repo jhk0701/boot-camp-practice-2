@@ -1,18 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Test : MonoBehaviour
 {
-    
-    ObjectPoolRequest1 objectPoolRequest1;
+    public float dir;
+    public InputAction moveAction;
 
     void Start()
     {
-        objectPoolRequest1 = GetComponent<ObjectPoolRequest1>();
+        moveAction.performed += TestInput;
     }
 
-    public void GetObject()
+    void TestInput(InputAction.CallbackContext value)
     {
 
     }
